@@ -11,58 +11,102 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="../style.css" />
+		<style>
+			table {
+				width: 100%;
+			}
+
+			thead {
+				background-color: #ffefeb;
+			}
+
+			th {
+				text-transform: uppercase;
+				color: #6c4338;
+				font-size: 0.9rem;
+			}
+
+			th,
+			td {
+				padding: 1rem 0;
+			}
+
+			td:first-child {
+				font-weight: bold;
+			}
+		</style>
 		<title>IITCoffee | Menu</title>
 	</head>
+
 	<body>
-		<nav>
-			<a href="../index.html">IITCoffee</a>
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="menu.html">Menu</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="#">Order Now</a></li>
-			</ul>
+		<nav class="navbar">
+			<div class="container container--flex">
+				<a href="../index.html" class="navbar__logo">IITCoffee</a>
+
+				<ul class="navbar__nav">
+					<li class="navbar__item">
+						<a class="navbar__link" href="../index.html">Home</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link navbar__link--active" href="menu.html"
+							>Menu</a
+						>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="about.html">About</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="contact.html">Contact</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link btn btn--primary" href="#">Order Now</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 
 		<main>
-			<h1>Our Menu</h1>
-			<h3>Hot Drinks</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>Item</th>
-						<th>Small</th>
-						<th>Regular</th>
-						<th>Large</th>
-					</tr>
-				</thead>
+			<div class="container">
+				<h1 class="section-heading">Our Menu</h1>
+				<h3 class="side-heading">Hot Drinks</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Small (A$)</th>
+							<th>Regular (A$)</th>
+							<th>Large (A$)</th>
+						</tr>
+					</thead>
 
-				<tbody>
-					<tr>
-						<td>Mocha</td>
-						<td>4.5</td>
-						<td>5.5</td>
-						<td>6</td>
-					</tr>
-					<tr>
-						<td>Cappuccino</td>
-						<td>4</td>
-						<td>5</td>
-						<td>5.5</td>
-					</tr>
-					<tr>
-						<td>Hot Chocolate</td>
-						<td>4</td>
-						<td>5</td>
-						<td>6</td>
-					</tr>
-				</tbody>
-			</table>
+					<tbody>
+						<tr>
+							<td>Mocha</td>
+							<td>4.5</td>
+							<td>5.5</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>Cappuccino</td>
+							<td>4</td>
+							<td>5</td>
+							<td>5.5</td>
+						</tr>
+						<tr>
+							<td>Hot Chocolate</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</main>
 
 		<footer>
-			<p>Copyright &copy; IITCoffee 2022. All rights reserved.</p>
+			<div class="container">
+				<p>Copyright &copy; IITCoffee 2022. All rights reserved.</p>
+			</div>
 		</footer>
 	</body>
 </html>

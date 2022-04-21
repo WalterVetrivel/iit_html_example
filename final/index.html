@@ -11,17 +11,104 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
+
+		<style>
+			.landing {
+				padding-top: 5rem;
+				padding-bottom: 5rem;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.landing__text {
+				width: 60%;
+				margin-right: 1rem;
+			}
+
+			.landing__heading {
+				font-size: 4rem;
+				line-height: 4rem;
+				margin-bottom: 1rem;
+				font-weight: 900;
+			}
+
+			.landing__sub {
+				margin-bottom: 2rem;
+				color: #575757;
+			}
+
+			.landing__image {
+				width: 35%;
+				border-radius: 0.5rem;
+				overflow: hidden;
+			}
+
+			.landing__image > img {
+				border-radius: 0.5rem;
+				display: block;
+				width: 100%;
+			}
+
+			#opening {
+				padding: 5rem 2rem;
+				background-color: #ffefeb;
+			}
+
+			.opening-hours {
+				list-style-position: inside;
+			}
+
+			.opening-hours > li:not(:last-of-type) {
+				margin-bottom: 1.5rem;
+			}
+
+			.testimonials {
+				padding-top: 5rem;
+				padding-bottom: 5rem;
+			}
+
+			.testimonial__list {
+				display: flex;
+			}
+
+			.testimonial {
+				padding: 1rem;
+				color: #373737;
+			}
+
+			.testimonial:first-of-type {
+				padding-left: 0;
+			}
+
+			.testimonial:last-of-type {
+				padding-right: 0;
+			}
+
+			.testimonial__text {
+				font-style: italic;
+			}
+
+			.testimonial__author {
+				font-size: 0.75rem;
+				font-weight: bold;
+				text-align: right;
+			}
+		</style>
+
 		<title>IITCoffee | Home</title>
 	</head>
 
 	<body>
-		<div class="container">
-			<nav class="navbar">
+		<nav class="navbar">
+			<div class="container container--flex">
 				<a href="index.html" class="navbar__logo">IITCoffee</a>
 
 				<ul class="navbar__nav">
 					<li class="navbar__item">
-						<a class="navbar__link" href="index.html">Home</a>
+						<a class="navbar__link navbar__link--active" href="index.html"
+							>Home</a
+						>
 					</li>
 					<li class="navbar__item">
 						<a class="navbar__link" href="pages/menu.html">Menu</a>
@@ -36,9 +123,11 @@
 						<a class="navbar__link btn btn--primary" href="#">Order Now</a>
 					</li>
 				</ul>
-			</nav>
+			</div>
+		</nav>
 
-			<header class="landing">
+		<header class="landing">
+			<div class="container container--flex">
 				<div class="landing__text">
 					<h1 class="landing__heading">Fresh coffee to freshen up your day</h1>
 					<p class="landing__sub">
@@ -46,7 +135,8 @@
 						esse ab dicta reiciendis!
 					</p>
 
-					<a href="#" class="btn btn--cta">Browse our menu</a>&nbsp;
+					<a href="pages/menu.html" class="btn btn--cta">Browse our menu</a
+					>&nbsp;
 					<a href="#" class="btn btn--secondary">Order now >></a>
 				</div>
 
@@ -65,20 +155,36 @@
 						>
 					</p>
 				</div>
-			</header>
+			</div>
+		</header>
 
-			<main>
-				<section id="opening">
-					<h2 class="section-heading">Our opening times</h2>
-					<ol class="opening-hours">
-						<li>Monday-Friday&nbsp;&nbsp;&nbsp;8am-7pm</li>
-						<li>Saturday&nbsp;&nbsp;&nbsp;9am-4pm</li>
-						<li>Sunday&nbsp;&nbsp;&nbsp;Closed</li>
-						<li>Public Holidays&nbsp;&nbsp;&nbsp;10am-2pm</li>
-					</ol>
-				</section>
+		<main>
+			<section id="opening">
+				<div class="container container--flex" style="align-items: center">
+					<div>
+						<h2 class="section-heading">Our opening times</h2>
+						<ol class="opening-hours">
+							<li>Monday-Friday&nbsp;&nbsp;&nbsp;<strong>8am-7pm</strong></li>
+							<li>Saturday&nbsp;&nbsp;&nbsp;<strong>9am-4pm</strong></li>
+							<li>Sunday&nbsp;&nbsp;&nbsp;<strong>Closed</strong></li>
+							<li>
+								Public Holidays&nbsp;&nbsp;&nbsp;<strong>10am-2pm</strong>
+							</li>
+						</ol>
+					</div>
 
-				<section class="testimonials">
+					<div>
+						<img
+							src="images/opening.jpg"
+							alt="Clock"
+							style="border-radius: 0.5rem"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonials">
+				<div class="container">
 					<h2 class="section-heading">What our customers say</h2>
 
 					<div class="testimonial__list">
@@ -112,12 +218,14 @@
 							<p class="testimonial__author">- John Doe</p>
 						</div>
 					</div>
-				</section>
-			</main>
+				</div>
+			</section>
+		</main>
 
-			<footer>
+		<footer>
+			<div class="container">
 				<p>Copyright &copy; IITCoffee 2022. All rights reserved.</p>
-			</footer>
-		</div>
+			</div>
+		</footer>
 	</body>
 </html>
