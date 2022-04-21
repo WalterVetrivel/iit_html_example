@@ -4,96 +4,120 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
 		<title>IITCoffee | Home</title>
 	</head>
+
 	<body>
-		<nav>
-			<a href="index.html">IITCoffee</a>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="pages/menu.html">Menu</a></li>
-				<li><a href="pages/about.html">About</a></li>
-				<li><a href="pages/contact.html">Contact</a></li>
-				<li><a href="#">Order Now</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<nav class="navbar">
+				<a href="index.html" class="navbar__logo">IITCoffee</a>
 
-		<header>
-			<div>
-				<h1>Fresh coffee to freshen up your day</h1>
-				<p>
-					Lorem ipsum dolor sit amet elit. Facere rem vel similique eligendi
-					esse ab dicta reiciendis!
-				</p>
-				<a href="#">Browse our menu</a>&nbsp;
-				<a href="#">Order now >></a>
-			</div>
+				<ul class="navbar__nav">
+					<li class="navbar__item">
+						<a class="navbar__link" href="index.html">Home</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="pages/menu.html">Menu</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="pages/about.html">About</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="pages/contact.html">Contact</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link btn btn--primary" href="#">Order Now</a>
+					</li>
+				</ul>
+			</nav>
 
-			<div>
-				<img src="images/landing.jpg" alt="Coffee" />
-				Photo by
-				<a
-					href="https://unsplash.com/@itfeelslikefilm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-					>🇸🇮 Janko Ferlič</a
-				>
-				on
-				<a
-					href="https://unsplash.com/s/photos/coffee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-					>Unsplash</a
-				>
-			</div>
-		</header>
+			<header class="landing">
+				<div class="landing__text">
+					<h1 class="landing__heading">Fresh coffee to freshen up your day</h1>
+					<p class="landing__sub">
+						Lorem ipsum dolor sit amet elit. Facere rem vel similique eligendi
+						esse ab dicta reiciendis!
+					</p>
 
-		<main>
-			<section>
-				<h2>Our opening times</h2>
-				<ol>
-					<li>Monday-Friday&nbsp;&nbsp;&nbsp;8am-7pm</li>
-					<li>Saturday&nbsp;&nbsp;&nbsp;9am-4pm</li>
-					<li>Sunday&nbsp;&nbsp;&nbsp;Closed</li>
-					<li>Public Holidays&nbsp;&nbsp;&nbsp;10am-2pm</li>
-				</ol>
-			</section>
-
-			<section>
-				<h2>What our customers say</h2>
-
-				<div>
-					<div>
-						<blockquote>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
-							vel? Aliquam obcaecati similique temporibus officia sunt
-							perferendis, ullam tempore labore sapiente quo ab maxime natus
-							molestiae. Doloribus dolor illum temporibus!
-						</blockquote>
-						<p>- John Doe</p>
-					</div>
-
-					<div>
-						<blockquote>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
-							vel? Aliquam obcaecati similique temporibus officia sunt
-							perferendis, ullam tempore labore sapiente quo ab maxime natus
-							molestiae. Doloribus dolor illum temporibus!
-						</blockquote>
-						<p>- John Doe</p>
-					</div>
-
-					<div>
-						<blockquote>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
-							vel? Aliquam obcaecati similique temporibus officia sunt
-							perferendis, ullam tempore labore sapiente quo ab maxime natus
-							molestiae. Doloribus dolor illum temporibus!
-						</blockquote>
-						<p>- John Doe</p>
-					</div>
+					<a href="#" class="btn btn--cta">Browse our menu</a>&nbsp;
+					<a href="#" class="btn btn--secondary">Order now >></a>
 				</div>
-			</section>
-		</main>
 
-		<footer>
-			<p>Copyright &copy; IITCoffee 2022. All rights reserved.</p>
-		</footer>
+				<div class="landing__image">
+					<img src="images/landing.jpg" alt="Coffee" />
+					<p class="attribution">
+						Photo by
+						<a
+							href="https://unsplash.com/@itfeelslikefilm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+							>🇸🇮 Janko Ferlič</a
+						>
+						on
+						<a
+							href="https://unsplash.com/s/photos/coffee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+							>Unsplash</a
+						>
+					</p>
+				</div>
+			</header>
+
+			<main>
+				<section id="opening">
+					<h2 class="section-heading">Our opening times</h2>
+					<ol class="opening-hours">
+						<li>Monday-Friday&nbsp;&nbsp;&nbsp;8am-7pm</li>
+						<li>Saturday&nbsp;&nbsp;&nbsp;9am-4pm</li>
+						<li>Sunday&nbsp;&nbsp;&nbsp;Closed</li>
+						<li>Public Holidays&nbsp;&nbsp;&nbsp;10am-2pm</li>
+					</ol>
+				</section>
+
+				<section class="testimonials">
+					<h2 class="section-heading">What our customers say</h2>
+
+					<div class="testimonial__list">
+						<div class="testimonial">
+							<blockquote class="testimonial__text">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+								vel? Aliquam obcaecati similique temporibus officia sunt
+								perferendis, ullam tempore labore sapiente quo ab maxime natus
+								molestiae. Doloribus dolor illum temporibus!
+							</blockquote>
+							<p class="testimonial__author">- John Doe</p>
+						</div>
+
+						<div class="testimonial">
+							<blockquote class="testimonial__text">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+								vel? Aliquam obcaecati similique temporibus officia sunt
+								perferendis, ullam tempore labore sapiente quo ab maxime natus
+								molestiae. Doloribus dolor illum temporibus!
+							</blockquote>
+							<p class="testimonial__author">- John Doe</p>
+						</div>
+
+						<div class="testimonial">
+							<blockquote class="testimonial__text">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+								vel? Aliquam obcaecati similique temporibus officia sunt
+								perferendis, ullam tempore labore sapiente quo ab maxime natus
+								molestiae. Doloribus dolor illum temporibus!
+							</blockquote>
+							<p class="testimonial__author">- John Doe</p>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer>
+				<p>Copyright &copy; IITCoffee 2022. All rights reserved.</p>
+			</footer>
+		</div>
 	</body>
 </html>
